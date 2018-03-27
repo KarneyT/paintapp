@@ -1,0 +1,47 @@
+<!--Paint App Calculator-->
+<!doctype html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="paintapp.css" />
+
+<title>Paint App</title>
+</head>
+<body>
+ <h1>Results</h1>
+<p id="myOutput"></p>
+<script language="JavaScript">
+  function processForm()
+  {
+    var myURLstring1 = location.search.substring(1).split("&");
+    var num1 = myURLstring1[0].slice(2);
+	var num1 = parseFloat(num1);
+	
+	var gallons =(num1/400)*2;
+	//var gallons = gallons.toFixed(2);
+	var gallons= Math.round(gallons);
+
+	document.getElementById("myOutput").innerHTML=num1+" Square Feet coverts to about: "+gallons+" Gallon(s)."; 
+  }
+  processForm();
+</script>
+<p id="myOutput"></p>
+
+<form action="tips.html" method="GET">
+
+   <input type="submit" value="Painting Tips" name="tips" id="tips">
+</form>
+<br />
+<form action="inputs.html" method="GET">
+
+   <input type="submit" value="Back" name="back" id="back">
+</form>
+<br />
+<form action="index.html" method="GET">
+
+  <input type="submit" value="Home" name="home" id="home">
+</form>
+<p>**These estimations are based on two coats of paint.**</p>
+</body>
+</html>

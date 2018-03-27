@@ -1,0 +1,47 @@
+<!--Paint App Calculator-->
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="paintapp.js"></script>
+<link rel="stylesheet" type="text/css" href="paintapp.css" />
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<title>Paint App</title>
+</head>
+
+<body>
+
+<h1>Paint App Calculator</h1>
+
+
+<p>What is the Length of your room?</p>
+<input type= "text" id="length" name="length"/>
+<p>What is the Width of your room?</p>
+<input type ="text" id="width" name="width" />
+<p>What is the Height of your ceiling?</p>
+<input type = "text" id="height" name="height" />
+
+<p>How many Doors are in the room?</p>
+<input type= "text" value="" id="door" />
+<p>How many Windows are in the room?</p>
+<input type ="text" value="" id="window" />
+
+<p>
+<input type= "button" value="Calculate" id="submit" name="submit"/>
+</p>
+
+
+<form action="output.html" method="GET">
+<p>SqFt<br />
+   <input type="text" id="blah" name="1">
+</p>
+   <input type="submit" value="Get Gallon Amount" name="submit" id="submit">
+</form>
+<form action="index.html" method="GET">
+
+   <p><input type="submit" value="Back" name="back" id="back"></p>
+</form>
+<p>**Note that Doors and Windows are deducted from your square footage**</p>
+</body>
+</html>

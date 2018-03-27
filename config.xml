@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.karneythompson.paint"
+    version   = "1.0.0">
+
+<name>Paint Calculator App</name>
+
+<description>
+A Paint Calculator App
+</description>
+
+<author href="https://build.phonegap.com" email="k.thompson4794@gmail.com">
+Karney Thompson
+</author>
+
+
+<!-- Icons -->
+
+<platform name="android">
+
+			  <icon src="paintbrush/android/mipmap-hdpi/ic_launcher.png" density="hdpi" />
+              <icon src="paintbrush/android/mipmap-ldpi/ic_launcher.png" density="ldpi" />
+              <icon src="paintbrush/android/mipmap-mdpi/ic_launcher.png" density="mdpi" />
+              <icon src="paintbrush/android/mipmap-xhdpi/ic_launcher.png" density="xhdpi" />
+     </platform>
+
+
+
+</widget>
