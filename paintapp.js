@@ -11,16 +11,13 @@ var calculations = function(){
 	var windows= parseInt($("window").value);
 	if (length == "") {
                 alert("Please enter the length.");
-				return;
-        }
-   if (width == "") {
+		return;
+        } else if (width === "") {
                 alert("Please enter the width.");
-				return;
-        }
-		
-	if(height == ""){
-				alert("Please enter the height")
-				return;
+		return;
+        } else if(height === ""){
+		alert("Please enter the height")
+		return;
 	}
 	
 	
@@ -33,7 +30,7 @@ var calculations = function(){
 	
 	
 	window.onload = function () {
-    $("submit").onclick = calculations;
+    	$("submit").onclick = calculations;
 	$("length").focus();
 
 }
