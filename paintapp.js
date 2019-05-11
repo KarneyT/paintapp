@@ -4,12 +4,13 @@ var $ = function (id) {
 
 var calculations = function(){
 	
-	var length= parseInt($("length").value);
-	var width= parseInt($("width").value);
-	var height= parseInt($("height").value);
-	var doors= parseInt($("door").value);
-	var windows= parseInt($("window").value);
-	if (length == "") {
+	var length = parseInt($("length").value);
+	var width = parseInt($("width").value);
+	var height = parseInt($("height").value);
+	var doors = parseInt($("door").value);
+	var windows = parseInt($("window").value);
+	
+	if (length === "") {
                 alert("Please enter the length.");
 		return;
         } else if (width === "") {
